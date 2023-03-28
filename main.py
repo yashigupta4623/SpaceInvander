@@ -1,4 +1,5 @@
 import pygame 
+import random
 
 #initalizing the pygame
 pygame.init() #MANDATORY
@@ -18,9 +19,19 @@ playerY = 480 #lower value  inverse to height
 playerX_change = 0
 playerY_change = 0
 
+#enemy 
+enemyImg = pygame.image.load('enemy.png')
+enemyX = random.randint(0,800)
+enemyY = (50,150) #lower value  inverse to height
+enemyX_change = 0
+enemyY_change = 0
+
+
 def player(x,y):
     screen.blit(playerImg,(x,y)) #blit means to draw
 
+def enemy(x,y):
+    screen.blit(enemyImg,(x,y)) #blit means to draw
 
 #Game Loop
 running = True
@@ -56,4 +67,5 @@ while running:
 
 
     player(playerX,playerY)
+    enemy(enemyX,enemyY)
     pygame.display.update() #MANDATORY
