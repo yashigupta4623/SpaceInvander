@@ -47,5 +47,13 @@ while running:
                 # print("KEYSTROKE HAS RELEASED")
 
     playerX += playerX_change
+
+    if playerX<=0:
+        playerX = 0 
+    elif playerX >= 736: #800-64 as 64 is the size of spaceship
+        playerX = 736
+
+
+
     player(playerX,playerY)
     pygame.display.update() #MANDATORY
