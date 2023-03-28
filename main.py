@@ -27,7 +27,7 @@ running = True
 while running:
      #rgb - red, green, blue (0 to 255)
     screen.fill((0,0,0))
-
+  
     for event in pygame.event.get():
         if event.type == pygame.QUIT: 
             running = False 
