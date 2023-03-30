@@ -149,8 +149,6 @@ while running:
         fire_bullet(playerX,bulletY)
         bulletY -= bulletY_change
 
- 
-
     player(playerX,playerY)
     show_score(text_x,text_y)
     pygame.display.update() #MANDATORY
